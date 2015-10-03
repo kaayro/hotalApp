@@ -13,7 +13,7 @@
         <name>HotelApp</name>
 
         <description>
-        Aplicación de prueba de un hotel 
+        	Aplicación de prueba de un hotel 
         </description>
 
         <author href="http://igitsoft.com" email="info@igitsoft.com">
@@ -23,4 +23,5 @@
 		<!-- Plugins -->
 		<gap:plugin name="org.apache.cordova.dialogs" />
 		<gap:plugin name="org.apache.cordova.media-capture" />
+		<gap:plugin name="org.apache.cordova.file-transfer" />
     </widget>

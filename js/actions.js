@@ -17,9 +17,9 @@ var fn = {
 		var nom = $('#regName').val();
 		var tel = $('#regTel').val();
 		var mail = $('#regMail').val();
-		if(nom != '' && tel != '' && mail != ''){
-			alert();
-			//Enviar datos al servidor
+		var foto = $('#regPhoto').attr('rel');
+		if(nom != '' && tel != '' && mail != '' && foto != undefined && foto != ''){
+			server.regSend(nom, tel, mail, foto);
 		}else{
 			navigator.notification.alert('Todos los campos son requeridos', null, "Error de Registro", "Aceptar");
 		}
