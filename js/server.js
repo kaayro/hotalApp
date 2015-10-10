@@ -7,6 +7,7 @@ var server = {
 		}).done(server.regDone);
 	},
 	regDone: function(msg){
+		alert(msg + " :data sent");
 		if(msg == '1'){
 			alert(foto);
 			fileTransfer.sendPhoto(foto);
