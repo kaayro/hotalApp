@@ -7,9 +7,10 @@ var server = {
 		}).done(server.regDone);
 	},
 	regDone: function(msg){
-		if(msg == '1')
+		if(msg == '1'){
+			alert(foto);
 			fileTransfer.sendPhoto(foto);
-		else
+		}else
 			navigator.notification.alert("Hubo un error al enviar los datos", null, "Error al enviar datos", "Aceptar");
 	}
 };
