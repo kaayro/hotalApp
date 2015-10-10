@@ -1,5 +1,6 @@
 var fileTransfer = {
 	win: function (r) {
+		alert(r + " :Photo Sent");
 		if(r.response == '1'){
 			navigator.notification.alert("Los datos se han enviado satisfactoriamente", null, "Registro Correcto", "Aceptar");
 		}else{

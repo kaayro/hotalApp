@@ -1,6 +1,6 @@
 var mediaCapture = {
 	takePhoto: function(){
-		navigator.device.capture.captureImage(mediaCapture.captureSuccess, mediaCapture.captureError, {limit:2});
+		navigator.device.capture.captureImage(mediaCapture.captureSuccess, mediaCapture.captureError, {limit:1});
 	},
 	captureSuccess: function(mediaFiles) {
 		var i, path, len;
