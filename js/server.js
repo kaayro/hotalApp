@@ -10,7 +10,7 @@ var server = {
 		alert(msg + " :data sent");
 		if(msg == 1){
 			alert(foto);
-			fileTransfer.sendPhoto(foto);
+			//fileTransfer.sendPhoto(foto);
 		}else
 			navigator.notification.alert("Hubo un error al enviar los datos", null, "Error al enviar datos", "Aceptar");
 	}
