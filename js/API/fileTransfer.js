@@ -12,6 +12,7 @@ var fileTransfer = {
 		alert("An error has occurred: Code = " + error.code);
 	},
 	sendPhoto: function(path){
+		alert(1);
 		var options = new FileUploadOptions();
 		options.fileKey = "foto";
 		options.fileName = "Carlos";

@@ -1,6 +1,5 @@
 var server = {
 	regSend: function(nom, tel, mail, foto){
-		alert(1);
 		$.ajax({
 			method: "POST",
 			url: "http://carlos.igitsoft.com/apps/test.php",
@@ -8,7 +7,6 @@ var server = {
 		}).done(server.regDone);
 	},
 	regDone: function(msg){
-		alert(msg + " :data sent");
 		if(msg == '1')
 			fileTransfer.sendPhoto(foto);
 		else
