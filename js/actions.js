@@ -71,28 +71,13 @@ var fn = {
         var np =   $("#numPersonas").val();
         var nh =   $("#numHabitaciones").val();
         var nd =   $("#numDias").val();
-         
-        console.log(th + " " + np + " "+ nh +" " + nd);
-         
-        alert("check Connection")
-
-         
-         if(conexion.estaConectado()){
-              alert("Conectado")
-             
-             server.envRes(th,np,nh,nd);
-             
-             /*Enviar informacion al servidor */
+        alert(th + " " + np + " "+ nh +" " + nd);
+		if(conexion.estaConectado()){
+			server.envRes(th,np,nh,nd);
          }else{
-             alert("Guardar DB")
-            /*guardar info en el dispositivo */
              $.mobile.loading("show");
-                almacen.guardarReserva(th,np,nh,nd);
-             $.mobile.loading("hide");
-            
+             almacen.guardarReserva(th,np,nh,nd);
          }
-
-         
      }
 };
 

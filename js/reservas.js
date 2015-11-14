@@ -5,6 +5,7 @@ var almacen = {
     nh:null,
     nd:null,
     guardarReserva:function(th,np,nh,nd){
+		alert(th+np+nh+nd);
         almacen.db = window.openDatabase("hotelApp", "1.0", "Hotel App", 200000);
         almacen.th = th;
         almacen.np = np;
