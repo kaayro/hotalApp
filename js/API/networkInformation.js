@@ -1,10 +1,11 @@
 var conexion={
-    estaConectado : function(){
+    estaConectado: function(){
         if(navigator.connection.type != Connection.NONE)
             return true;    
         else
-            return false;
-        
-    }
-    
+            return false;  
+    },
+	eventoConectado: function(){
+		document.addEventListener("online",almacen.syncData,false);
+	}
 }
